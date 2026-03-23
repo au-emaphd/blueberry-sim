@@ -22,3 +22,7 @@ h5 {
 button {
   cursor: pointer;
 }
+
+.supportTabCards {
+  width: 500px;
+}
