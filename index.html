@@ -27,10 +27,39 @@
           <img src="./av/img/bb-logo_no-word.png" class="card-img-top" alt="Illustration of three vibrant blue blueberries with green leaves. The berries have detailed textures, conveying freshness and natural appeal.">
           <div class="card-img-overlay">
             <h5 class="card-title">SALES</h5>
-            <a href="./prog/ts.html" class="card-link">ENTER</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModalSales">
+              LOGIN
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- Sales login modal -->
+      <div class="modal fade" id="loginModalSales" tabindex="-1" aria-labelledby="loginModalSalesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalSalesLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <h2>Demo Account</h2>
+              <h3>Name: </h3><p id="loginName"></p>
+              <h3>Role: </h3><p id="loginRole"></p>
+
+              <a class="btn btn-primary" href="./prog/ts.html" role="button">Login</a>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
       <div class="col">
         <div class="card" id="home-program-card">
@@ -49,7 +78,8 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
+  <script src="./js/global.js"></script>
+  <script src="./js/index.js"></script>
   
 </body>
 </html>
