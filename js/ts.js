@@ -16,6 +16,7 @@ document.getElementById("sendMessageBtn").addEventListener("click", () => {
 */
 
 // Email Outreach Modal
+document.getElementsByClassName("callUserFirst").innerText = userFirst;
 const emailOptions = {
   A: [
     "Quick question about your charting workflow",
@@ -74,7 +75,8 @@ Object.keys(emailOptions).forEach((blankKey) => {
     button.textContent = optionText;
 
     button.addEventListener("click", () => {
-      const blankSpan = document.getElementById(blankKey);
+      console.log(blankKey);
+      const blankSpan = document.getElementById("blank" + blankKey);
       blankSpan.textContent = optionText;
       blankSpan.classList.add("text-success", "fw-semibold");
     });
