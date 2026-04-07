@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>blueberry | Cybersecurity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+<!-- Global CSS -->
+  <link rel="stylesheet" href="./../css/global.css" />
+
+<!-- Page CSS -->
+  <link rel="stylesheet" href="./../css/cyber.css" />
+</head>
+
+<!-- main container -->
+<body>
+  <main class="container my-4">
+    <h1 class="mb-4">IT Help Desk</h1>
+
+    <!-- Stats -->
+    <section class="mb-4" aria-label="Statistics">
+      <div class="row text-center">
+        <div class="col">
+          <div class="stat-box">
+            <div class="row">
+                <div class="col-8"><strong>Skill Score</strong></div>
+                <div class="col-4"><div id="statSkill">0</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stat-box">
+            <div class="row">
+                <div class="col-8"><strong>Leadership Score</strong></div>
+                <div class="col-4"><div id="statLead">0</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="baseTabsITSS" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tasksITSS" type="button">
+          Tasks
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tktsITSS" type="button">
+          Tickets
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#msgITSS" type="button">
+          Messages
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content border border-top-0 p-3">
+
+      <!-- Task Manager -->
+      <div class="tab-pane fade show active" id="tasksITSS" role="tabpanel">
+        <h2 class="h5">Assigned Tasks</h2>
+        <div class="row">
+            <div class="row">
+                <div class="col-10">Cybersecurity task coming soon</div>
+                <div class="col-2"><button type="button" class="btn btn-primary">DONE</button></div>
+            </div>
+            <div class="row">
+                <div class="col-10">Cybersecurity task coming soon</div>
+                <div class="col-2"><button type="button" class="btn btn-primary">DONE</button></div>
+            </div>
+            <div class="row">
+                <div class="col-10">Cybersecurity task coming soon</div>
+                <div class="col-2"><button type="button" class="btn btn-primary">DONE</button></div>
+            </div>
+            <div class="row">
+                <div class="col-10">Cybersecurity task coming soon</div>
+                <div class="col-2"><button type="button" class="btn btn-primary">DONE</button></div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Tickets -->
+      <div class="tab-pane fade" id="tktsITSS" role="tabpanel">
+        <h2 class="h5">Tickets</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Company</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Last Touch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Jordan Brady</th>
+                <td>Clinic Operations Supervisor</td>
+                <td>BrightCare Rehab Network</td>
+                <td>jbrady@brightcaresim</td>
+                <td>312-555-0172</td>
+                <td>0 days ago</td>
+                </tr>
+                <tr>
+                <th scope="row">Morgan Ellis</th>
+                <td>Founder & CEO</td>
+                <td>CareQueue Health</td>
+                <td>morgan@carequeuesim</td>
+                <td>773-555-0038</td>
+                <td>6 days ago</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <!-- Messages -->
+      <div class="tab-pane fade" id="msgITSS" role="tabpanel">
+        <table class="table">
+        <!-- Inbox -->    
+            <h2 class="h5">Inbox</h2>
+            <thead>
+                <tr>
+                <th scope="col-6">Subject</th>
+                <th scope="col-4">Sender</th>
+                <th scope="col-2">Received</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEmailObjection">Software demo question</button></th>
+                <td>Sender</td>
+                <td>Status</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Email Objection Handling Modal -->
+            <div class="modal fade" id="modalEmailObjection" tabindex="-1" aria-labelledby="modalEmailObjectionLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalEmailObjectionLabel">Software demo question</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    email objection handling modal
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Send & close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        <!-- Outbox -->
+                <table class="table">
+                <h2 class="h5">Sent</h2>
+            <thead>
+                <tr>
+                <th scope="col-6">Subject</th>
+                <th scope="col-4">Recipient</th>
+                <th scope="col-2">Sent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEmailOutreach">NO SUBJECT</button></th>
+                <td>Recipient</td>
+                <td>Status</td>
+                </tr>
+            </tbody>
+        </table>
+
+                <!-- Email Outreach Modal -->
+            <div class="modal fade" id="modalEmailOutreach" tabindex="-1" aria-labelledby="modalEmailOutreachLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalEmailOutreachLabel">NO SUBJECT</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+<div class="card mb-4">
+    <div class="card-body">
+      <p><strong>Subject:</strong> <span id="blank1">[Select subject]</span></p>
+
+      <p>Hi {{First Name}},</p>
+
+      <p>
+        I’m reaching out because
+        <span id="blank2">[select an option]</span>.
+        Teams like yours have shared that
+        <span id="blank3">[select an option]</span>,
+        especially when documentation systems don’t fully support clinical workflows.
+      </p>
+
+      <p>
+        Our medical charting platform helps organizations
+        <span id="blank4">[select an option]</span>,
+        while staying compliant and clinician‑friendly.
+      </p>
+
+      <p>
+        Would it be helpful to
+        <span id="blank5">[select an option]</span>
+        sometime this week or next?
+      </p>
+
+      <p>Best regards,<br />{{Your Name}}</p>
+    </div>
+  </div>
+
+  <!-- Option Selectors -->
+  <div id="optionSelectors"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Send & close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
